@@ -1,0 +1,18 @@
+.headshot {
+    height: auto;
+    max-height: 220px;
+    width: auto;
+    max-width: 220px;
+    display: inline-block;
+  }
+.aboutme {
+    text-align: center;
+  }
+.buttonspace {
+    width:5px;
+    height:auto;
+    display:inline-block;
+  }
+.divider {
+  height: 10px;
+}

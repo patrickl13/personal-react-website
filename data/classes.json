@@ -1,4 +1,5 @@
-{"classes":[{
+[
+    {
         "id": 1,
         "classname": "Object Oriented Programming I",
         "description": "Introduction to programming. Basic data types, variables, expressions, assignments, control flow. Classes, objects, methods. Information hiding, public vs. private visibility, data abstraction and encapsulation. References. Arrays.",
@@ -66,8 +67,8 @@
     },
     {
         "id": 12,
-        "classname": "Databases",
-        "description": "Introduction to database management systems. Conceptual database design: the entity‑relationship model. The relational data model and relational algebra: functional dependencies and normalization. The SQL language and its application in defining, querying, and updating databases; integrity constraints; triggers. Developing database applications. Other data models: Datalog. Object‑oriented data model and ODL. Semi‑structured data.",
+        "classname": "Introduction to Software Engineering",
+        "description": "Software development process models (e.g. linear vs. iterative). Project management; roles, activities and deliverables for each software life cycle phase. Requirements management: analysis, elicitation, and scope. Architecture, design and the mapping of requirements to design and design to implementation. Traceability. Software quality assurance: verification, validation and the role of testing. Maintenance and evolution.",
         "status": "false"
     },
     {
@@ -83,4 +84,4 @@
         "status": "false"
     }
 
-]}
+]

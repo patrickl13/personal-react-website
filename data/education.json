@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "school": "Concordia University",
+        "certificate":"Bachelor of Computer Science (BCompSc)",
+        "status": "false"
+    },
+    {
+        "id": 2,
+        "school": "John Abbott College",
+        "certificate":"Quebec Diploma of College Studies, Commerce",
+        "status": "true"
+    },
+    {
+        "id": 3,
+        "school": "Loyola High School",
+        "certificate":"Secondary School Diploma",
+        "status": "true"
+    }
+
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "name": "My Personal Website",
+        "technology": "javaScript(ReactJS)",
+        "description": "My Personal Website which you are viewing right now!",
+        "link": "www.patrickleduc.ca"
+    },
+    {
+        "id": 2,
+        "name": "Lab Finder Tool",
+        "technology": "javaScript(jQuery), PHP, Python",
+        "description": "Web Application developed for CAE Inc. to recommend the best lab for a simulator issue.",
+        "link": ""
+    },
+    {
+        "id": 3,
+        "name": "Raspberry Pi k3s Cluster",
+        "technology": "Kubernetes, Docker",
+        "description": "A 4 Pi lightweight Kubernetes Cluster built to host my personal Web Applications. Inspired from r/homelab",
+        "link": ""
+    }
+
+]

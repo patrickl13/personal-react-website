@@ -6,7 +6,7 @@ export const Project = props => (
     <div>
         <div className="headers">
             <h1>Projects</h1>
-            <p>Some Text</p>
+            <p>A list of projects I have completed, and some I am currently working on.</p>
         </div>
         <div className="text-left">
             {props.projects.map(project => (

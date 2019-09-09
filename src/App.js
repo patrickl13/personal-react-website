@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { AboutMe } from './components/aboutme/aboutme.component';
 import {Education} from './components/classwork-list/classwork-list.component';
 import {Project} from './components/projects-list/projects-list.component';
+import { Experience } from './components/experience-list/experience-list.component';
 import {NavigationBar} from './components/navbar/navbar.component';
 import { Route } from 'react-router-dom';
 
@@ -14,7 +15,7 @@ class App extends Component {
       classlist: [],
       education: [],
       projects: [],
-
+      experience: []
     };
   }
 
@@ -32,6 +33,10 @@ class App extends Component {
     fetch('http://localhost:8080/projects')
     .then(response => response.json())
     .then(item => this.setState({projects:item}));
+
+    fetch('http://localhost:8080/experience')
+    .then(response => response.json())
+    .then(item => this.setState({experience:item}));
   }
 
     render() {
@@ -49,6 +54,12 @@ class App extends Component {
                  render={ () => 
                   (
                     <Project projects = {this.state.projects} />
+                  )}    
+           />
+            <Route exact path='/experience' 
+                 render={ () => 
+                  (
+                    <Experience experience = {this.state.experience} />
                   )}    
            />
           

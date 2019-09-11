@@ -3,6 +3,8 @@ import { AboutMe } from './components/aboutme/aboutme.component';
 import {Education} from './components/classwork-list/classwork-list.component';
 import {Project} from './components/projects-list/projects-list.component';
 import { Experience } from './components/experience-list/experience-list.component';
+import { Contact } from './components/contact/contact.component';
+import { Blog } from './components/blog-list/blog-list.component';
 import {NavigationBar} from './components/navbar/navbar.component';
 import { Route } from 'react-router-dom';
 
@@ -15,12 +17,17 @@ class App extends Component {
       classlist: [],
       education: [],
       projects: [],
-      experience: []
+      experience: [],
+      posts: []
     };
   }
 
 //when mounted, calls this block of code
   componentDidMount(){
+    // const blogger_api = 'https://www.googleapis.com/blogger/v3/blogs/3736151271245725908/posts?key=AIzaSyD3C4Yz1PDo9F8GrlUvMhYFPxLdh8LVjm0';
+    // fetch(blogger_api)
+    // .then(response => "[" + response.json() + "]")
+    // .then(post => this.setState({posts: post}));
 
     fetch('http://localhost:8080/classes')
     .then(response => response.json())
@@ -62,7 +69,15 @@ class App extends Component {
                     <Experience experience = {this.state.experience} />
                   )}    
            />
-          
+           <Route exact path='/contact' component={Contact}/>
+
+           <Route exact path='/blog' 
+                 render={ () => 
+                  (
+                    <Blog posts = {this.state.posts} />
+                  )}    
+           />
+
         </React.Fragment>
       );
     }

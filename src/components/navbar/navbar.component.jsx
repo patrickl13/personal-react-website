@@ -12,8 +12,8 @@ export const NavigationBar = () => (
             <Nav.Link href="/experience">Experience</Nav.Link>
             <Nav.Link href="/projects">Projects</Nav.Link>
             <Nav.Link href="/education">Education</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
-            <Nav.Link href="/blog">Blog</Nav.Link>
+            {/* <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="/blog">Blog</Nav.Link> */}
         </Nav>
     </Navbar>
     <Alert variant="primary">

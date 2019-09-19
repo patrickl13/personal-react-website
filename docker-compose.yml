@@ -1,6 +1,29 @@
-version: '3'
+version: "3"
 services:
-  react-app:
-    build: .
-    ports:
-      - "3000:3000"
+    #react app container
+    frontend:
+        container_name: react_app
+        build:
+            context: ./client
+            dockerfile: Dockerfile
+        image: praventz/react_app
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./client:/usr/src/app
+        links:
+            - backend
+    #node json server container
+    backend:
+        container_name: json_server
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+        image: praventz/json_server
+        ports:
+            - "8080:8080"
+        volumes:
+            - ./server:/usr/src/app
+netoworks:
+    webappnetwork:
+        driver: bridge

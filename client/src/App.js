@@ -7,6 +7,10 @@ import { Contact } from './components/contact/contact.component';
 import { Blog } from './components/blog-list/blog-list.component';
 import {NavigationBar} from './components/navbar/navbar.component';
 import { Route } from 'react-router-dom';
+import classes from './data/classes.json';
+import education from './data/education.json';
+import experience from './data/experience.json';
+import projects from './data/projects.json';
 
 class App extends Component {
   constructor() {
@@ -14,41 +18,11 @@ class App extends Component {
 
 
     this.state = {
-      classlist: [],
-      education: [],
-      projects: [],
-      experience: [],
-      posts: []
+      classlist: classes,
+      education: education,
+      projects: projects,
+      experience: experience,
     };
-  }
-
-//when mounted, calls this block of code
-  componentDidMount(){
-    // const blogger_api = 'https://www.googleapis.com/blogger/v3/blogs/3736151271245725908/posts?key=AIzaSyD3C4Yz1PDo9F8GrlUvMhYFPxLdh8LVjm0';
-    // fetch(blogger_api)
-    // .then(response => "[" + response.json() + "]")
-    // .then(post => this.setState({posts: post}));
-
-    const connectClass = {host:'backend/classes', port:8080};
-    const connectEducation = {host:'backend/education', port:8080};
-    const connectProjects = {host:'backend/projects', port:8080};
-    const connectExperience = {host:'backend/experience', port:8080};
-
-    fetch(connectClass)
-    .then(response => response.json())
-    .then(classes => this.setState({classlist:classes}));
-
-     fetch(connectEducation)
-    .then(response => response.json())
-    .then(schools => this.setState({education:schools}));
-
-    fetch(connectProjects)
-    .then(response => response.json())
-    .then(item => this.setState({projects:item}));
-
-    fetch(connectExperience)
-    .then(response => response.json())
-    .then(item => this.setState({experience:item}));
   }
 
     render() {
@@ -87,8 +61,5 @@ class App extends Component {
       );
     }
   }
-
-  
-
 
 export default App;

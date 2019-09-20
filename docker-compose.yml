@@ -5,20 +5,8 @@ services:
         build:
             context: ./client
             dockerfile: Dockerfile
-        image: praventz/react_app
         ports:
             - "3000:3000"
         volumes:
             - ./client:/usr/src/app
-        links:
-            - backend
-    #node json server container
-    backend:
-        build:
-            context: ./server
-            dockerfile: Dockerfile
-        image: praventz/json_server
-        ports:
-            - "8080:8080"
-        volumes:
-            - ./server:/usr/src/app
+        

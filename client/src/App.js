@@ -29,19 +29,24 @@ class App extends Component {
     // .then(response => "[" + response.json() + "]")
     // .then(post => this.setState({posts: post}));
 
-    fetch('json_server/classes')
+    const connectClass = {host:'backend/classes', port:8080};
+    const connectEducation = {host:'backend/education', port:8080};
+    const connectProjects = {host:'backend/projects', port:8080};
+    const connectExperience = {host:'backend/experience', port:8080};
+
+    fetch(connectClass)
     .then(response => response.json())
     .then(classes => this.setState({classlist:classes}));
 
-     fetch('json_server/education')
+     fetch(connectEducation)
     .then(response => response.json())
     .then(schools => this.setState({education:schools}));
 
-    fetch('json_server/projects')
+    fetch(connectProjects)
     .then(response => response.json())
     .then(item => this.setState({projects:item}));
 
-    fetch('json_server/experience')
+    fetch(connectExperience)
     .then(response => response.json())
     .then(item => this.setState({experience:item}));
   }

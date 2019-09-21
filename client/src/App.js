@@ -4,7 +4,6 @@ import {Education} from './components/classwork-list/classwork-list.component';
 import {Project} from './components/projects-list/projects-list.component';
 import { Experience } from './components/experience-list/experience-list.component';
 import { Contact } from './components/contact/contact.component';
-import { Blog } from './components/blog-list/blog-list.component';
 import {NavigationBar} from './components/navbar/navbar.component';
 import { Route } from 'react-router-dom';
 import classes from './data/classes.json';
@@ -49,13 +48,6 @@ class App extends Component {
                   )}    
            />
            <Route exact path='/contact' component={Contact}/>
-
-           <Route exact path='/blog' 
-                 render={ () => 
-                  (
-                    <Blog posts = {this.state.posts} />
-                  )}    
-           />
 
         </React.Fragment>
       );

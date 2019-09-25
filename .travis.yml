@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t praventz/personal-react-website -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true praventz/personal-react-website npm run test

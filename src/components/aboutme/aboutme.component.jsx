@@ -12,8 +12,8 @@ export const AboutMe = () => (
         <div className='col'></div>
 
         <div className="aboutme">
-            <Image className="headshot" src="coffee.jpg" />
             <Image className="headshot" src="bagpipe.jpg" />
+            <Image className="headshot" src="coffee.jpg" />
             <Image className="headshot" src="selfie1.jpg" roundedCircle />
             <Image className="headshot" src="laptop.jpg" />
             <Image className="headshot" src="guitar.jpg" />
@@ -62,7 +62,7 @@ export const AboutMe = () => (
                 I am organized, communicative and very good at working autonomously. 
             </p>
             <p>
-                <Button variant="primary">My Resume</Button>
+                <Button variant="primary" href="CV_2019_PatrickLeduc.docx">Download CV</Button>
             </p>
         </Jumbotron>
 

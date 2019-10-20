@@ -7,6 +7,3 @@ before_install:
 
 script:
   - docker run -e CI=true praventz/personal-react-website npm run test
-
-after_success:
-  -sh.travis/deploy_dockerhub.sh

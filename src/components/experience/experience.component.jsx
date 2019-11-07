@@ -5,10 +5,10 @@ import "../classwork/classwork.css";
 
 export const Experience_Card = props => (
     <Card className='carditem'>
-        <Card.Header> {props.experiences.company}  </Card.Header>
+        <Card.Header> <h4> {props.experiences.company} </h4> </Card.Header>
             <Card.Body>
                 <Card.Text>
-                    <strong>{props.experiences.title}</strong> 
+                    <h6>{props.experiences.title}</h6> 
                     <p>{props.experiences.date}</p>
                     <ul>
                         <li>{props.experiences.point1}</li>

@@ -62,7 +62,7 @@ export const AboutMe = () => (
                 I am organized, communicative and very good at working autonomously. 
             </p>
             <p>
-                <Button variant="primary" href="CV_2019_PatrickLeduc.docx">Download CV</Button>
+                <Button variant="primary" href="patrickleducresume_2019.pdf">Download CV</Button>
             </p>
         </Jumbotron>
 

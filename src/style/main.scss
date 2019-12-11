@@ -8,6 +8,8 @@
 @import './layout/footer';
 @import './layout/sections';
 
+@import'./sections/backdrop';
+@import'./sections/toolbar';
 @import './sections/about';
 @import './sections/contact';
 @import './sections/greeting';

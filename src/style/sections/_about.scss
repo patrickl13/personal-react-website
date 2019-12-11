@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+.hero {
+  min-height: 100vh;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+}
 .about {
     background-color: #02aab0;
     background-image: linear-gradient(135deg,rgb(43, 90, 185),rgb(80, 154, 189));
@@ -17,8 +23,18 @@
   margin-top: 50px;
 }
 
+.wrapper {
+  @include respond(phone){
+    margin-bottom: 100px;
+  }
+  
+}
 .circle-container {
   @include on-circle($item-count: 4, $circle-size: 20em, $item-size: 10em); 
+  @include respond(phone){
+    @include on-circle($item-count: 4, $circle-size: 15em, $item-size: 7em); 
+    margin-bottom: 50px;
+  }
   margin: 5em auto 0;
   
   img { 

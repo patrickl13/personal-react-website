@@ -38,6 +38,10 @@ const About = props => (
             I have a curious mind that is always looking for the latest technology to discover.
             I am organized, communicative and very good at working autonomously.
         </p>
+        <div className='wrapper'>
+          <div className="toolbar-logo"><a href="/">Resume</a></div>
+        </div>
+        
 
         </div>
       </Fade>

@@ -4,7 +4,9 @@ import SideMenu from './components/SideMenu/SideMenu';
 import Backdrop from './components/Backdrop/Backdrop';
 import Greeting from './components/Greeting/Greeting';
 import About from './components/About/About';
+import Projects from './components/Projects/Projects';
 import './App.scss';
+
 class App extends Component {
 
     state = {
@@ -38,6 +40,7 @@ class App extends Component {
             <main className = "main" >
             <Greeting/>
             <About/>
+            <Projects/>
             </main>
             </div>
         );

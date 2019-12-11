@@ -1,5 +1,5 @@
 import React from 'react';
-import './Toolbar.css';
+import '../../style/main.scss';
 import SideMenuButton from '../SideMenu/SideMenuButton';
 
 const Toolbar = props => (
@@ -8,7 +8,6 @@ const Toolbar = props => (
             <div className="toolbar-toggle-button">
                 <SideMenuButton click={props.menuClickHandler}/>
             </div>
-            <div className="toolbar-logo"><a href="/">Resume</a></div>
             <div className="toolbar-nav-items">
                 <ul>
                     <li><a href='/'>About</a></li>

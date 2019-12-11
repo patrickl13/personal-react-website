@@ -6,10 +6,12 @@
 .hamburger-icon-1 {
     transition: transform 0.25s ease-out;
     fill: white;
+    display: block;
+    transition: transform 0.5 linear;
 }
 
 .hamburger-icon-1:hover {
-    transform: rotate(45deg);
+    transform: scale(1.1,1.1);
 
 }
 
@@ -23,8 +25,9 @@
 
 }
 
-.button-expand .arrow-right{
-    display: none;
+.button-expand{
+    display: flex;
+    align-items:center;
 }
 
 .button-expand:hover .hamburger-icon,
@@ -77,7 +80,7 @@
     color:orange;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 700px) {
     .side-drawer{
         display:none;
     }

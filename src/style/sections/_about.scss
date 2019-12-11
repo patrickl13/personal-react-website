@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.about {
+    background-color: #02aab0;
+    background-image: linear-gradient(135deg,rgb(43, 90, 185),rgb(80, 154, 189));
+    color: #fff;
+    height: 100%;
+    border-top: 0;
+    -webkit-clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+    clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+    padding-bottom: 10%;
+    padding-top: 1%;
+    margin-top: 50px;
+}
+
+.text-format{
+  margin-top: 50px;
+}
+
+.circle-container {
+  @include on-circle($item-count: 4, $circle-size: 20em, $item-size: 10em); 
+  margin: 5em auto 0;
+  
+  img { 
+    display: block; 
+    max-width: 100%; 
+    transition: .15s;
+    
+    &:hover,
+    &:active {
+      filter: grayscale(0);
+    }
+  }
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@keyframes counter-rotation {
+  from {transform:rotate(360deg);}
+  to {transform:rotate(0deg);}
+}
+

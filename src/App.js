@@ -4,7 +4,7 @@ import SideMenu from './components/SideMenu/SideMenu';
 import Backdrop from './components/Backdrop/Backdrop';
 import Greeting from './components/Greeting/Greeting';
 import About from './components/About/About';
-import './App.css';
+import './App.scss';
 class App extends Component {
 
     state = {

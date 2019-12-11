@@ -1,5 +1,5 @@
 import React from 'react';
-import './Greeting.css';
+import '../../style/main.scss';
 import Portrait from '../../assets/me.png';
 import Bounce from 'react-reveal/Bounce';
 
@@ -8,10 +8,10 @@ const Greeting = props => {
     
 
     return (
-    <div className='container'>
+    <div className='container section'>
         <Bounce left>
         <div className='item text'>
-            <p className='main-text'>
+            <p className='main-text title'>
                 Hello, my name is <br/> 
                 <span class="text-color-main">Patrick Leduc</span>.
                 <br />

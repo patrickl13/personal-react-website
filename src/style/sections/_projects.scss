@@ -1,3 +1,13 @@
 .projects {
   background-image: linear-gradient(135deg,rgb(43, 90, 185),rgb(80, 154, 189));
 }
+
+.project-text .item{
+  display: block;
+  text-align:center;
+  width:50%;
+}
+
+.project-text p {
+  color: white;
+}

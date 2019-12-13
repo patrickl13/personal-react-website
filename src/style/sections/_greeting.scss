@@ -47,18 +47,3 @@
     -webkit-text-fill-color: transparent;
 }
 
-.cv-button {
-    background:rgb(43, 90, 185);
-    border: 1px solid rgb(43, 90, 185);
-    color:white;
-    font-size: 1rem;
-    padding: 20px 20px;
-    justify-content: left;
-    transition: transform .5s ease;
-    border-radius: 0.25rem;
-}
-.cv-button:hover {
-    background:white;
-    border: 1p solid white;
-    color: rgb(43, 90, 185)
-}

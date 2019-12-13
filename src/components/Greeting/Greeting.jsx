@@ -18,7 +18,7 @@ const Greeting = props => {
             <br />
                         I'm a <span class="text-color-main">Front-End</span> Developer.
         </p>
-                    <button className='item cv-button'> Find Out More </button>
+                    <button className='item button-v2'> Find Out More </button>
                 </div>
             </Bounce>
             <Bounce right>

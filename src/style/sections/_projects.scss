@@ -21,18 +21,22 @@
   margin-bottom: 50px;
 }
 
-.buttons {
-  align-content: center;
-  width:100%;
-  
-  .button-v1, .button-v2{
-    width:30%;
-    float: left;
+
+  .item{
+    .button-v1, .button-v2{
+      float: left;
+      margin-left: 5px;
+    }
   }
-}
+
 
 .project-card img{
   border-radius: 2%;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
+
+  @include respond(phone){
+    width: 75vh;
+    height: auto;
+  }
 }

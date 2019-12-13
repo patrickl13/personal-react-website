@@ -20,7 +20,8 @@ const Card = props => {
                             itaque molestiae.
                         </p>
                     </div>
-                    <div className='buttons item'>
+                    <div className='item'>
+                    
                         <div className='button-v1'>
                             <a target="_blank" href="#!">
                                 See Live

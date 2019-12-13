@@ -40,6 +40,9 @@ class App extends Component {
             <main className = "main" >
             <Greeting/>
             <About/>
+            <div className='divider'>
+                
+            </div>
             <Projects/>
             </main>
             </div>

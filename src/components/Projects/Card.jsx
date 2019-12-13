@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../style/main.scss';
 import Fade from 'react-reveal/Fade';
+import Tilt from 'react-tilt';
 import Lab from '../../assets/labfinder.png';
 
 const Card = props => {
@@ -17,23 +18,29 @@ const Card = props => {
                             aperiam earum dolor voluptatum consequatur blanditiis
                             inventore debitis fuga numquam voluptate ex architecto
                             itaque molestiae.
-                  </p>
+                        </p>
                     </div>
-                    <div className='button-v1'>
-                        <a target="_blank" href="#!">
-                            See Live
-                        </a>
-                    </div>
+                    <div className='buttons item'>
+                        <div className='button-v1'>
+                            <a target="_blank" href="#!">
+                                See Live
+                            </a>
+                        </div>
 
-                    <div className='button-v1'>
-                        <a target="_blank" href="#!">
-                            Source Code
-                        </a>
+                        <div className='button-v1'>
+                            <a target="_blank" href="#!">
+                                Source Code
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
+
                 <div className='item'>
-                    <img src={Lab} />
+                    <Fade right>
+                        <Tilt className="Tilt" options={{ max: 25, scale: 1 }}>
+                            <img src={Lab} />
+                        </Tilt>
+                    </Fade>
                 </div>
             </div>
         </div>

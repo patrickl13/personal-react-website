@@ -7,7 +7,10 @@ const Projects = props => {
 
     return (
     <div className='projects'>
-        <h2 className='title'>Projects</h2>
+        <Fade top>
+            <h2 className='title'>Projects</h2>
+        </Fade>
+        
         <Card/>
     </div>
 

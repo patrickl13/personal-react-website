@@ -1,13 +1,38 @@
 .projects {
   background-image: linear-gradient(135deg,rgb(43, 90, 185),rgb(80, 154, 189));
+  padding-top:20px;
+  padding-bottom: 20px;
+  height: 100vh;
+  min-height: 100vh;
 }
 
 .project-text .item{
   display: block;
-  text-align:center;
-  width:50%;
+  margin: auto;
+  text-align:left;
 }
 
 .project-text p {
   color: white;
+}
+
+.project-card {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.buttons {
+  align-content: center;
+  width:100%;
+  
+  .button-v1, .button-v2{
+    width:30%;
+    float: left;
+  }
+}
+
+.project-card img{
+  border-radius: 2%;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
 }

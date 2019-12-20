@@ -1,5 +1,5 @@
 .projects {
-  background-image: linear-gradient(135deg,rgb(43, 90, 185),rgb(80, 154, 189));
+  // background-image: linear-gradient(135deg,rgb(43, 90, 185),rgb(80, 154, 189));
   padding-top:20px;
   padding-bottom: 20px;
   height: 100vh;
@@ -32,11 +32,17 @@
 
 .project-card img{
   border-radius: 2%;
+  margin-top: 3vh;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px #222);
+  position: relative;
+  float: left;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @include respond(phone){
-    width: 75vh;
+    width: 100%;
     height: auto;
   }
 }

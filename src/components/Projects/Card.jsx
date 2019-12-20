@@ -1,45 +1,59 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../style/main.scss';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
-import Lab from '../../assets/labfinder.png';
 
 const Card = props => {
+
+    const { id, name, technology, description, link, source, image } = props.project;
+    const imageUrl = require('../../assets/' + image);
+
+
 
     return (
         <div className='project-card'>
             <div className="container">
                 <div className='project-text'>
-                    <h3 className="title">Project Title</h3>
-                    <div className='item'>
+                    <h3 className="title">{name}</h3>
+                    <div className='item content readable'>
                         <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Excepturi neque, ipsa animi maiores repellendus distinctio
-                            aperiam earum dolor voluptatum consequatur blanditiis
-                            inventore debitis fuga numquam voluptate ex architecto
-                            itaque molestiae.
+                            {description}
                         </p>
                     </div>
                     <div className='item'>
-                    
-                        <div className='button-v1'>
-                            <a target="_blank" href="#!">
-                                See Live
+                        {
+                            link != "" ?
+                                (
+                                    <div className='button-v1'>
+                                        <a target="_blank" href={link}>
+                                            See Live
                             </a>
-                        </div>
+                                    </div>
+                                )
+                                :
+                                null
+                        }
 
-                        <div className='button-v1'>
-                            <a target="_blank" href="#!">
-                                Source Code
+                        {
+                            source != "" ?
+                                (
+                                    <div className='button-v1'>
+                                        <a target="_blank" href={source}>
+                                            Source Code
                             </a>
-                        </div>
+                                    </div>
+                                )
+                                :
+                                null
+                        }
+
                     </div>
                 </div>
 
                 <div className='item'>
                     <Fade right>
                         <Tilt className="Tilt" options={{ max: 25, scale: 1 }}>
-                            <img src={Lab} />
+                            <img src={imageUrl} />
                         </Tilt>
                     </Fade>
                 </div>

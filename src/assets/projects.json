@@ -1,0 +1,38 @@
+[
+    {
+        "id": 0,
+        "name": "354 The Stars",
+        "technology": ["React","Redux","Node","MySQL","Heroku","Material UI"],
+        "description":"Led the Front-End team, and made major design decisions for a E-Commerce Application project. Built with React/Redux, while working with a custom backend API.",
+        "link":"http://www.354thestars.ca",
+        "source":"https://github.com/patrickl13/COMP354",
+        "image":"354thestars.png"
+    },
+    {
+        "id": 1,
+        "name": "My Own Website",
+        "technology": ["React","Docker", "TravisCI", "Heroku"],
+        "description": "My Personal Website which you are viewing right now, build with React.js and hosted in a Docker container on Heroku.",
+        "link": "http://www.patrickleduc.ca",
+        "source":"https://github.com/patrickl13/personal-react-website",
+        "image":"personalwebsite.png"
+    },
+    {
+        "id": 2,
+        "name": "Lab Finder Tool",
+        "technology": ["jQuery", "PHP", "Python","MySQL"],
+        "description": "Full Stack Web Application developed for CAE Inc. to recommend the best lab for a simulator issue. Used by Engineers to increase turn around time for solving Simulator issues.",
+        "link": "",
+        "source":"",
+        "image":"labfinder.png"
+    },
+    {
+        "id": 3,
+        "name": "Raspberry Pi k3s Cluster",
+        "technology": ["Kubernetes", "Docker"],
+        "description": "A 4 Pi lightweight Kubernetes Cluster built to host my personal Web Applications. Inspired from r/homelab.",
+        "link": "",
+        "source":"",
+        "image":"cluster.png"
+    }
+]

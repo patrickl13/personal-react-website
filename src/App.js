@@ -5,6 +5,8 @@ import Backdrop from './components/Backdrop/Backdrop';
 import Greeting from './components/Greeting/Greeting';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import './App.scss';
 
 class App extends Component {
@@ -40,11 +42,15 @@ class App extends Component {
             <main className = "main" >
             <Greeting/>
             <About/>
-            <div className='divider'>
-                
-            </div>
+            <div className='divider'></div>
             <Projects/>
+            <div className='divider'></div>
+            <Contact/>
+            <div className='divider'></div>
             </main>
+            <footer>
+                <Footer/>
+            </footer>
             </div>
         );
     }

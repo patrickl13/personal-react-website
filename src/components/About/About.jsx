@@ -24,14 +24,14 @@ const About = props => (
         </div>
       </Fade>
       <Fade right>
-        <div className='item text-format content'>
+        <div className='item text-format content readable'>
           <p>
             I'm a Computer Science student at Concordia University in Montreal, Canada. I have a passion for building Web Applications,
             especially the Front-end where I constantly look for user feedback to create the best possible product.
         </p>
           <p>
             On top of all my classwork and projects, I make time to serve my country as a professional Bagpiper with the Black Watch (RHR) of Canada
-            , a historically celebrated regiment in the Canadian Armed Forces Reserves. In my down time, I also like to play guitar.
+            , a historically celebrated regiment in the Canadian Armed Forces Reserves. In my down time, I also like to play guitar (lefty flip).
         </p>
 
           <p>

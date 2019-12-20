@@ -12,7 +12,7 @@ const Greeting = props => {
         <div className='container section'>
             <Bounce left>
                 <div className='item text'>
-                    <p className='main-text title'>
+                    <p className='main-text title readable'>
                         Hello, my name is <br />
                         <span class="text-color-main">Patrick Leduc</span>.
             <br />

@@ -7,13 +7,12 @@
   display: flex;
 }
 .about {
-    background-color: #02aab0;
-    background-image: linear-gradient(135deg,rgb(43, 90, 185),rgb(80, 154, 189));
+    // background-color: #02aab0;
+    // background-image: linear-gradient(135deg,rgb(43, 90, 185),rgb(80, 154, 189));
     color: #fff;
-    height: 100%;
     border-top: 0;
-    -webkit-clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
-    clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+    // -webkit-clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
+    // clip-path: polygon(0 0,100% 0,100% 80%,0 100%);
     padding-bottom: 10%;
     padding-top: 1%;
     margin-top: 50px;
@@ -23,6 +22,7 @@
 
 .text-format{
   margin-top: 50px;
+  padding: 2vh 2vh;
 }
 
 .wrapper {

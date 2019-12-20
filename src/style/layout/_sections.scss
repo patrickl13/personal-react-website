@@ -24,8 +24,12 @@ section {
 }
 
 .divider {
-  height: 30vh;
-  min-height: 30vh;
+  height: 15vh;
+  min-height: 15vh;
+  display: block;
+  @include respond(phone){
+  flex-wrap: wrap;
+    }
 }
 
 //flex-box 
@@ -41,6 +45,12 @@ section {
   justify-content: center;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+
+.readable {
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 2%;
+  margin-top: 10vh;
 }
 
 .item {

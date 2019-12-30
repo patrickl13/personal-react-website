@@ -6,9 +6,6 @@ const Contact = props => {
 
     return(
         <div class="container footer">
-        <a href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
           <div class="social-links">
             <a href="https://github.com/patrickl13" target="_blank">
             <FontAwesomeIcon icon={['fab', 'github']}/>

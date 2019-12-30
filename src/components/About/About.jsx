@@ -5,6 +5,7 @@ import Bagpipe from '../../assets/bagpipe.png';
 import Coffee from '../../assets/coffee.png';
 import Laptop from '../../assets/laptop.png';
 import Fade from 'react-reveal/Fade';
+import Resume from '../../assets/patrickleducresume_2019.pdf';
 
 const About = props => (
   <div className='about' id='about'>
@@ -39,7 +40,7 @@ const About = props => (
             I am organized, communicative and very good at working autonomously.
         </p>
         <div className='wrapper'>
-          <div className="button-v1"><a href="/">Resume</a></div>
+          <div className="button-v1"><a href={Resume} target='_blank'>Resume</a></div>
         </div>
         
 

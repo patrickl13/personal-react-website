@@ -19,7 +19,6 @@ const Greeting = props => {
                         I <span className='words text-color-main'> </span> things for the web.
                         
         </p>
-                    <button className='item button-v2'> Find Out More </button>
                 </div>
             </Bounce>
             <Bounce right>

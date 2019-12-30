@@ -7,7 +7,7 @@ import Laptop from '../../assets/laptop.png';
 import Fade from 'react-reveal/Fade';
 
 const About = props => (
-  <div className='about'>
+  <div className='about' id='about'>
     <Fade top>
       <h2 className='title'>About Me</h2>
     </Fade>

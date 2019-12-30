@@ -7,7 +7,13 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab} from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 import './App.scss';
+
+library.add(fab);
+library.add(fas);
 
 class App extends Component {
 
@@ -30,27 +36,41 @@ class App extends Component {
         let backdrop;
 
         if (this.state.sideMenuOpen) {
-            backdrop = < Backdrop click = { this.backdropClickHandler }
+            backdrop = < Backdrop click={this.backdropClickHandler}
             />;
         }
-        return ( 
-            
-            <div className = "App" >
-            <Toolbar menuClickHandler = { this.sideMenuToggleClickHandler }/> 
-            < SideMenu show = { this.state.sideMenuOpen }/> 
-            { backdrop } 
-            <main className = "main" >
-            <Greeting/>
-            <About/>
-            <div className='divider'></div>
-            <Projects/>
-            <div className='divider'></div>
-            <Contact/>
-            <div className='divider'></div>
-            </main>
-            <footer>
-                <Footer/>
-            </footer>
+        return (
+
+            <div className="App" >
+                <div className='section'>
+                    <Toolbar menuClickHandler={this.sideMenuToggleClickHandler} />
+                    < SideMenu show={this.state.sideMenuOpen} />
+                    {backdrop}
+                </div>
+
+                <main className="main" >
+                    <div className='section'>
+                        <Greeting />
+                    </div>
+                    <div className='section'>
+                        <About />
+                    </div>
+
+
+                    <div className='divider'></div>
+                    <div className='section'>
+                        <Projects />
+                    </div>
+
+                    <div className='divider'></div>
+                    <div className='section'>
+                        <Contact />
+                    </div>
+                    <div className='divider'></div>
+                </main>
+                <footer>
+                    <Footer />
+                </footer>
             </div>
         );
     }

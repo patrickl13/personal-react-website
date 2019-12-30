@@ -1,5 +1,5 @@
 import React from 'react';
-import './SideMenu.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SideMenu = props => {
     let menuClasses = 'side-menu';
@@ -10,9 +10,25 @@ const SideMenu = props => {
 
     return(
     <nav className={menuClasses}>
-        <ul>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Contact</a></li>
+        <ul className='content'>
+            <li>
+                <a href='#about'>
+                    <FontAwesomeIcon icon={['fas', 'question']}/>
+                    About
+                </a>
+            </li>
+            <li>
+                <a href='#projects'>
+                    <FontAwesomeIcon icon={['fas', 'tasks']}/>   
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href='#contact'>
+                <FontAwesomeIcon icon={['fas', 'address-card']}/>
+                    Contact
+                </a>
+            </li>
         </ul>
     </nav>
     );

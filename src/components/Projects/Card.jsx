@@ -14,12 +14,15 @@ const Card = props => {
         <div className='project-card'>
             <div className="container">
                 <div className='project-text'>
+                    <Fade left> 
                     <h3 className="title">{name}</h3>
                     <div className='item content readable'>
+
                         <p>
                             {description}
                         </p>
                     </div>
+                    
                     <div className='item'>
                         {
                             link != "" ?
@@ -46,8 +49,9 @@ const Card = props => {
                                 :
                                 null
                         }
-
+                    
                     </div>
+                    </Fade> 
                 </div>
 
                 <div className='item'>

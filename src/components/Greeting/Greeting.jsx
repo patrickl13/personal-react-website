@@ -11,12 +11,13 @@ const Greeting = props => {
     <div className='hero'>
         <div className='container section'>
             <Bounce left>
-                <div className='item text'>
-                    <p className='main-text title readable'>
+            <div className='item text'>
+                    <p className='main-text title'>
                         Hello, my name is <br />
                         <span class="text-color-main">Patrick Leduc</span>.
             <br />
-                        I'm a <span class="text-color-main">Front-End</span> Developer.
+                        I <span className='words text-color-main'> </span> things for the web.
+                        
         </p>
                     <button className='item button-v2'> Find Out More </button>
                 </div>

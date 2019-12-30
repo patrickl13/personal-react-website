@@ -1,58 +1,79 @@
 import React, { Component } from 'react';
-import { AboutMe } from './components/aboutme/aboutme.component';
-import { Education } from './components/classwork-list/classwork-list.component';
-import { Project } from './components/projects-list/projects-list.component';
-import { Experience } from './components/experience-list/experience-list.component';
-import { Contact } from './components/contact/contact.component';
-import { NavigationBar } from './components/navbar/navbar.component';
-import { Route, BrowserRouter} from 'react-router-dom';
-import classes from './data/classes.json';
-import education from './data/education.json';
-import experience from './data/experience.json';
-import projects from './data/projects.json';
+import Toolbar from './components/Toolbar/Toolbar';
+import SideMenu from './components/SideMenu/SideMenu';
+import Backdrop from './components/Backdrop/Backdrop';
+import Greeting from './components/Greeting/Greeting';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab} from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import './App.scss';
+
+library.add(fab);
+library.add(fas);
 
 class App extends Component {
-  constructor() {
-    super();
 
+    state = {
+        sideMenuOpen: false
+    }
 
-    this.state = {
-      classlist: classes,
-      education: education,
-      projects: projects,
-      experience: experience,
+    //takes in previous state and reverses its bool value
+    sideMenuToggleClickHandler = () => {
+        this.setState((prevState) => {
+            return { sideMenuOpen: !prevState.sideMenuOpen };
+        })
     };
-  }
 
-  render() {
-    return (
-      <React.Fragment>
-        <NavigationBar />
-        <BrowserRouter>
-            <Route exact path='/' component={AboutMe} />
-            <Route path='/education'
-              render={() =>
-                (
-                  <Education classlist={this.state.classlist} education={this.state.education} />
-                )}
-            />
-            <Route path='/projects'
-              render={() =>
-                (
-                  <Project projects={this.state.projects} />
-                )}
-            />
-            <Route path='/experience'
-              render={() =>
-                (
-                  <Experience experience={this.state.experience} />
-                )}
-            />
-            <Route path='/contact' component={Contact} />
-        </BrowserRouter>
-      </React.Fragment>
-    );
-  }
+    backdropClickHandler = () => {
+        this.setState({ sideMenuOpen: false });
+    };
+
+    render() {
+        let backdrop;
+
+        if (this.state.sideMenuOpen) {
+            backdrop = < Backdrop click={this.backdropClickHandler}
+            />;
+        }
+        return (
+
+            <div className="App" >
+                <div className='section'>
+                    <Toolbar menuClickHandler={this.sideMenuToggleClickHandler} />
+                    < SideMenu show={this.state.sideMenuOpen} />
+                    {backdrop}
+                </div>
+
+                <main className="main" >
+                    <div className='section'>
+                        <Greeting />
+                    </div>
+                    <div className='section'>
+                        <About />
+                    </div>
+
+
+                    <div className='divider'></div>
+                    <div className='section'>
+                        <Projects />
+                    </div>
+
+                    <div className='divider'></div>
+                    <div className='section'>
+                        <Contact />
+                    </div>
+                    <div className='divider'></div>
+                </main>
+                <footer>
+                    <Footer />
+                </footer>
+            </div>
+        );
+    }
 }
 
 export default App;

@@ -1,0 +1,40 @@
+.button-v2{
+  text-decoration: none;
+  background:rgb(43, 90, 185);
+  border: 1px solid rgb(43, 90, 185);
+  color:white;
+  font-size: 1rem;
+  padding: 20px 20px;
+  justify-content: left;
+  transition: transform .5s ease;
+  border-radius: 0.25rem;
+}
+.button-v2:hover {
+  background:white;
+  border: 1p solid white;
+  color: rgb(43, 90, 185)
+}
+
+.button-v2 a{
+  text-decoration: none;
+}
+
+.button-v1 a {
+  color: white;
+  border: 2px solid white;
+  text-decoration: none;
+  align-items: center;
+  font-size: 1rem;
+  padding: 5px 10px;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+}
+
+.button-v1 a:hover {
+  color:rgb(43, 90, 185);
+  background:white;
+  border: 2px solid white;
+  text-decoration: none;
+  
+}

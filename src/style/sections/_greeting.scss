@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+@media (max-width: 768px){
+    .container{
+        flex-wrap: wrap;
+    }
+}
+.item.portrait {
+    padding: 0 0;
+    border-bottom: 5px solid white;
+    transition: border-bottom 0.6s linear;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.item.portrait:hover {
+    border-bottom: none;
+}
+
+.item.text {
+    justify-content: center;
+    padding: 10px;
+}
+
+.item.text p {
+    color: white;
+    text-align: left;
+}
+
+.main-text {
+    
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+    .main-text{
+        font-size:2.8rem;
+    }
+    .main-text p {
+        text-align: center;
+    }
+}
+
+.text-color-main {
+    background: -webkit-linear-gradient(rgb(43, 90, 185) 0%,rgb(80, 154, 189) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.words:before {
+    content:"Build";
+    animation:change 8s infinite;
+} 
+
+
+@keyframes change{
+    20% {
+        content:"Code";
+    }
+    40% {
+        content:"Prototype";
+    }
+    60% {
+        content:"Test";
+    }
+    80% {
+        content:"Debug";
+    }
+    100% {
+        content:"Build";
+    }
+}

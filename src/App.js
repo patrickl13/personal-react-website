@@ -49,24 +49,26 @@ class App extends Component {
                 </div>
 
                 <main className="main" >
-                    <div className='section'>
-                        <Greeting />
-                    </div>
-                    <div className='section'>
-                        <About />
-                    </div>
+                    <div className="main-center">
+                        <div className='section'>
+                            <Greeting />
+                        </div>
+                        <div className='section'>
+                            <About />
+                        </div>
 
 
-                    <div className='divider'></div>
-                    <div className='section'>
-                        <Projects />
-                    </div>
+                        <div className='divider'></div>
+                        <div className='section'>
+                            <Projects />
+                        </div>
 
-                    <div className='divider'></div>
-                    <div className='section'>
-                        <Contact />
+                        <div className='divider'></div>
+                        <div className='section'>
+                            <Contact />
+                        </div>
+                        <div className='divider'></div>
                     </div>
-                    <div className='divider'></div>
                 </main>
                 <footer>
                     <Footer />

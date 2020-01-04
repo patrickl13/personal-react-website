@@ -14,19 +14,19 @@ const SideMenu = props => {
             <li>
                 <a href='#about'>
                     <FontAwesomeIcon icon={['fas', 'question']}/>
-                    About
+                    &nbsp; About
                 </a>
             </li>
             <li>
                 <a href='#projects'>
                     <FontAwesomeIcon icon={['fas', 'tasks']}/>   
-                    Projects
+                    &nbsp; Projects
                 </a>
             </li>
             <li>
                 <a href='#contact'>
                 <FontAwesomeIcon icon={['fas', 'address-card']}/>
-                    Contact
+                &nbsp; Contact
                 </a>
             </li>
         </ul>

@@ -32,7 +32,7 @@ const About = props => (
         </p>
           <p>
             On top of all my classwork and projects, I make time to serve my country as a professional Bagpiper with the Black Watch (RHR) of Canada
-            , a historically celebrated regiment in the Canadian Armed Forces Reserves. In my down time, I also like to play guitar (lefty flip).
+            , a historically celebrated regiment in the Canadian Armed Forces Reserves.
         </p>
 
           <p>

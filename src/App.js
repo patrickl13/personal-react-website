@@ -42,11 +42,11 @@ class App extends Component {
         return (
 
             <div className="App" >
-                <div className='section'>
+                
                     <Toolbar menuClickHandler={this.sideMenuToggleClickHandler} />
                     < SideMenu show={this.state.sideMenuOpen} />
                     {backdrop}
-                </div>
+                
 
                 <main className="main" >
                     <div className="main-center">

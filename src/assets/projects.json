@@ -10,15 +10,24 @@
     },
     {
         "id": 1,
+        "name": "Auto Tune",
+        "technology": ["React","MongoDB", "Node.js", "Heroku"],
+        "description": "A Sheet Music DB Front-End with React, Back-End RESTful API built with Node.js, Express, MongoDB. Deployed on Heroku.",
+        "link": "http://bwpdmusic.herokuapp.com",
+        "source":"https://github.com/patrickl13/bwpd-musicbank",
+        "image":"autotune.png"
+    },
+    {
+        "id": 2,
         "name": "My Own Website",
         "technology": ["React","Docker", "TravisCI", "Heroku"],
-        "description": "My Personal Website which you are viewing right now, build with React.js and hosted in a Docker container on Heroku.",
+        "description": "My Personal Website which you are viewing right now, build with React.js and hosted in a Docker container on Heroku. Deployed on Heroku.",
         "link": "http://www.patrickleduc.ca",
         "source":"https://github.com/patrickl13/personal-react-website",
         "image":"personalwebsite.png"
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Lab Finder Tool",
         "technology": ["jQuery", "PHP", "Python","MySQL"],
         "description": "Full Stack Web Application developed for CAE Inc. to recommend the best lab for a simulator issue. Used by Engineers to increase turn around time for solving Simulator issues.",
@@ -27,7 +36,7 @@
         "image":"labfinder.png"
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "Raspberry Pi k3s Cluster",
         "technology": ["Kubernetes", "Docker"],
         "description": "A 4 Pi lightweight Kubernetes Cluster built to host my personal Web Applications. Inspired from r/homelab.",

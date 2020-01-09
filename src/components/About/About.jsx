@@ -27,17 +27,15 @@ const About = props => (
       <Fade right>
         <div className='item text-format content readable'>
           <p>
-            I'm a Computer Science student at Concordia University in Montreal, Canada. I have a passion for building Web Applications,
-            especially the Front-end where I constantly look for user feedback to create the best possible product.
+            I'm a Computer Science student at Concordia University in Montreal, Canada. I have a passion for building Web Applications that solve real problems and help others.
         </p>
           <p>
-            On top of all my classwork and projects, I make time to serve my country as a professional Bagpiper with the Black Watch (RHR) of Canada
-            , a historically celebrated regiment in the Canadian Armed Forces Reserves.
+            I play the bagpipes, video games and you can often find me sipping on a warm caffeinated beverage.
         </p>
 
           <p>
             I have a curious mind that is always looking for the latest technology to discover.
-            I am organized, communicative and very good at working autonomously.
+            I am organized, communicative and very good at working autonomously. Keep scrolling!
         </p>
         <div className='wrapper'>
           <div className="button-v1"><a href={Resume} target='_blank'>Resume</a></div>

@@ -12,7 +12,7 @@
         "id": 1,
         "name": "Auto Tune",
         "technology": ["React","MongoDB", "Node.js", "Heroku"],
-        "description": "A Sheet Music DB Front-End with React, Back-End RESTful API build MERN Stack. Deployed on Heroku.",
+        "description": "A Sheet Music DB Front-End with React, Back-End RESTful API built with Node.js, Express, MongoDB. Deployed on Heroku.",
         "link": "http://bwpdmusic.herokuapp.com",
         "source":"https://github.com/patrickl13/bwpd-musicbank",
         "image":"autotune.png"

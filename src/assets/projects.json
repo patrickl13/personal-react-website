@@ -3,7 +3,7 @@
         "id": 0,
         "name": "354 The Stars",
         "technology": ["React","Redux","Node","MySQL","Heroku","Material UI"],
-        "description":"Led the Front-End team, and made major design decisions for a E-Commerce Application project. Built with React/Redux, while working with a custom backend API.",
+        "description":"Led the Front-End team, and made major design decisions for a E-Commerce Application project. Built with React.js, Redux, working with a custom backend RESTful API.",
         "link":"http://www.354thestars.ca",
         "source":"https://github.com/patrickl13/COMP354",
         "image":"354thestars.png"
@@ -12,7 +12,7 @@
         "id": 1,
         "name": "Auto Tune",
         "technology": ["React","MongoDB", "Node.js", "Heroku"],
-        "description": "A Sheet Music DB Front-End with React, Back-End RESTful API built with Node.js, Express, MongoDB. Deployed on Heroku.",
+        "description": "A Sheet Music Database built with the MERN Stack. Made to catalog many pages of sheet music for easy access and avoid unnecessary printing. Deployed on Heroku.",
         "link": "http://bwpdmusic.herokuapp.com",
         "source":"https://github.com/patrickl13/bwpd-musicbank",
         "image":"autotune.png"
@@ -21,7 +21,7 @@
         "id": 2,
         "name": "My Own Website",
         "technology": ["React","Docker", "TravisCI", "Heroku"],
-        "description": "My Personal Website which you are viewing right now, build with React.js and hosted in a Docker container on Heroku. Deployed on Heroku.",
+        "description": "My Personal Website which you are viewing right now, build with React.js and hosted in a Docker container on Heroku.",
         "link": "http://www.patrickleduc.ca",
         "source":"https://github.com/patrickl13/personal-react-website",
         "image":"personalwebsite.png"

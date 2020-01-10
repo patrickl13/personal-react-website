@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../../style/main.scss';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 
 const Card = props => {
 
-    const { id, name, technology, description, link, source, image } = props.project;
+    const {name, description, link, source, image } = props.project;
     const imageUrl = require('../../assets/' + image);
 
 
@@ -25,10 +25,10 @@ const Card = props => {
                     
                     <div className='item'>
                         {
-                            link != "" ?
+                            link !== "" ?
                                 (
                                     <div className='button-v1'>
-                                        <a target="_blank" href={link}>
+                                        <a target="_blank" href={link} rel="noopener noreferrer">
                                             See Live
                             </a>
                                     </div>
@@ -38,10 +38,10 @@ const Card = props => {
                         }
 
                         {
-                            source != "" ?
+                            source !== "" ?
                                 (
                                     <div className='button-v1'>
-                                        <a target="_blank" href={source}>
+                                        <a target="_blank" href={source} rel="noopener noreferrer">
                                             Source Code
                             </a>
                                     </div>
@@ -57,7 +57,7 @@ const Card = props => {
                 <div className='item'>
                     <Fade right>
                         <Tilt className="Tilt" options={{ max: 25, scale: 1 }}>
-                            <img src={imageUrl} />
+                            <img src={imageUrl} alt="project"/>
                         </Tilt>
                     </Fade>
                 </div>

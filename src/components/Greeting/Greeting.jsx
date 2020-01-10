@@ -14,7 +14,7 @@ const Greeting = props => {
             <div className='item text'>
                     <p className='main-text title'>
                         Hello, my name is <br />
-                        <span class="text-color-main">Patrick Leduc</span>.
+                        <span className="text-color-main">Patrick Leduc</span>.
             <br />
                         I <span className='words text-color-main'> </span> things for the web.
                         
@@ -24,7 +24,7 @@ const Greeting = props => {
             <Bounce right>
                 <div className='item'>
                     <div className='item portrait'>
-                        <img src={Portrait} />
+                        <img src={Portrait} alt="portrait"/>
                     </div>
                 </div>
             </Bounce>

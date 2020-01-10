@@ -15,7 +15,7 @@ const Projects = props => {
             {
                 projects.map(project => (
                     <Card
-                    id={project.id}
+                    key={project.id}
                     project={project}
                     />
                 ))

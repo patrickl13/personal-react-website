@@ -38,7 +38,7 @@ const About = props => (
             I am organized, communicative and very good at working autonomously. Keep scrolling!
         </p>
         <div className='wrapper'>
-          <div className="button-v1"><a href={Resume} target='_blank'>Resume</a></div>
+          <div className="button-v1"><a href={Resume} target='_blank' rel="noopener noreferrer">Resume</a></div>
         </div>
         
 

@@ -56,8 +56,6 @@ class App extends Component {
                         <div className='section'>
                             <About />
                         </div>
-
-
                         <div className='divider'></div>
                         <div className='section'>
                             <Projects />

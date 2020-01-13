@@ -5,7 +5,7 @@ import Bagpipe from '../../assets/bagpipe.png';
 import Coffee from '../../assets/coffee.png';
 import Laptop from '../../assets/laptop.png';
 import Fade from 'react-reveal/Fade';
-import Resume from '../../assets/patrickleducresume_2019.pdf';
+import Resume from '../../assets/PatrickLeducResume2020.pdf';
 
 const About = props => (
   <div className='about' id='about'>

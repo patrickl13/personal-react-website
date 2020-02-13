@@ -10,7 +10,6 @@ import Footer from './components/Footer/Footer';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab} from '@fortawesome/free-brands-svg-icons';
 import { fas } from '@fortawesome/free-solid-svg-icons';
-import Particles from 'react-particles-js';
 import './App.scss';
 
 library.add(fab);
@@ -34,19 +33,6 @@ class App extends Component {
     };
 
     render() {
-
-        const particlesOptions = {
-            particles: {
-              line_linked: {
-                shadow: {
-                  enable: true,
-                  color: "#3CA9D1",
-                  blur: 5
-                }
-              }
-            }
-          }
-
         let backdrop;
 
         if (this.state.sideMenuOpen) {
@@ -56,11 +42,6 @@ class App extends Component {
         return (
 
             <div className="App" >
-            <Particles 
-            params={particlesOptions}
-            className='particles'
-            />
-
                     <Toolbar menuClickHandler={this.sideMenuToggleClickHandler} />
                     < SideMenu show={this.state.sideMenuOpen} />
                     {backdrop}

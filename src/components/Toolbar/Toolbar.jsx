@@ -1,6 +1,8 @@
 import React from 'react';
 import '../../style/main.scss';
 import SideMenuButton from '../SideMenu/SideMenuButton';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Toolbar = props => (
     <header className="toolbar">
@@ -10,9 +12,38 @@ const Toolbar = props => (
             </div>
             <div className="toolbar-nav-items">
                 <ul>
-                    <li><a href='#about'>About</a></li>
-                    <li><a href='#projects'>Projects</a></li>
-                    <li><a href='#contact'>Contact</a></li>
+                    <li>
+                        <HashLink
+                            to={{
+                                pathname: '/',
+                                hash: '#about'
+                            }}>
+                        About
+                        </HashLink>
+                    </li>
+                    <li>
+                        <HashLink
+                        to={{
+                            pathname: '/',
+                            hash: '#projects'
+                        }}>
+                        Projects
+                        </HashLink>
+                    </li>
+                    <li>
+                        <HashLink
+                            to={{
+                                pathname: '/',
+                                hash: '#contact'
+                            }}>
+                        Contact  
+                        </HashLink>
+                    </li>
+                    <li>
+                        <Link to='/blog'>
+                        Blog
+                        </Link>
+                    </li>
                 </ul>
             </div>
            

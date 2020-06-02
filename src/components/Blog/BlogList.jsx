@@ -15,8 +15,6 @@ const BlogList = () => {
                 (result) => {
                     setIsLoaded(true);
                     setPosts(result.posts);
-                    console.log(result.posts);
-                    console.log(posts);
                 },
                 (error) => {
                     setIsLoaded(true);
@@ -27,10 +25,9 @@ const BlogList = () => {
 
     return(
         <div>
-            <h2 className='title'> Blog List </h2>
             {
                 posts.map( post => (
-                    <BlogCard/>
+                    <BlogCard key={post.ID} post={post}/>
                 ))
             }
         </div> 

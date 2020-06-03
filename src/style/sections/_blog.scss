@@ -1,5 +1,9 @@
 .blog {
     color: #fff;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .blog-card {
@@ -9,6 +13,9 @@
     border-radius: 3px;
     width: 50%;
     margin: auto;
+    @include respond(phone) {
+        width: 90vw;
+    }
 }
 
 .blog-excerpt {

@@ -1,0 +1,29 @@
+.blog {
+    color: #fff;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.blog-card {
+    border: 1px solid #fff;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    width: 50%;
+    margin: auto;
+    @include respond(phone) {
+        width: 90vw;
+    }
+}
+
+.blog-excerpt {
+    padding: 5px;
+    margin: 5px;
+}
+
+.blog-button {
+    margin: auto;
+    width: 30%;
+}

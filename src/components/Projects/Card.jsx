@@ -8,7 +8,13 @@ const Card = props => {
     const {name, description, link, source, image } = props.project;
     const imageUrl = require('../../assets/' + image);
 
+    const openLink = () => {
+        window.open(link);
+    }
 
+    const openSource = () => {
+        window.open(source);
+    }
 
     return (
         <div className='project-card'>
@@ -27,10 +33,8 @@ const Card = props => {
                         {
                             link !== "" ?
                                 (
-                                    <div className='button-v1'>
-                                        <a target="_blank" href={link} rel="noopener noreferrer">
+                                    <div className='button-v1' onClick={openLink}>
                                             See Live
-                            </a>
                                     </div>
                                 )
                                 :
@@ -40,10 +44,8 @@ const Card = props => {
                         {
                             source !== "" ?
                                 (
-                                    <div className='button-v1'>
-                                        <a target="_blank" href={source} rel="noopener noreferrer">
+                                    <div className='button-v1' onClick={openSource}>
                                             Source Code
-                            </a>
                                     </div>
                                 )
                                 :
